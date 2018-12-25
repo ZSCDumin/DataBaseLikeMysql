@@ -658,9 +658,18 @@ void InterManager::EXEC_UPDATE(){
 	Attribute A = t->getattribute();
 	pos = pos1 + 1;
 	pos1 = GOGOGO(pos);
-	interwhere(pos1, attrselect, w_select, A, t);
-	pos = pos1 + 1;
-	pos1 = GOGOGO(pos);
+	cout << qs.substr(pos, pos1 - pos) << endl;
+	while (qs.substr(pos, pos1 - pos) != "where"){
+		pos = pos1 + 1;
+		pos1 = GOGOGO(pos);
+		cout << qs.substr(pos, pos1 - pos) << endl;
+		if (qs.substr(pos, pos1 - pos) != "="){
+			attrselect.push_back(1);
+		}
+		pos = pos1 + 1;
+		pos1 = GOGOGO(pos);
+	}
+	cout << qs.substr(pos, pos1 - pos) << endl;
 	interwhere(pos1, attrwhere, w_where, A, t);
 	cout << "更新功能还有待完善...." << endl;
 }
