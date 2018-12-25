@@ -56,6 +56,12 @@ int InterManager::EXEC(){
 		return 1;
 	}
 
+	else if (qs.substr(0, 6) == "update"){
+		EXEC_UPDATE();
+		cout << "Interpreter: successful update!" << endl;
+		return 1;
+	}
+
 	else
 		throw QueryException("ERROR: invalid query format!");
 }
@@ -95,7 +101,7 @@ void InterManager::Normolize(){
 		}
 	}
 	//cout << qs;
-	
+
 	//去除字符串中间的多个空格，比如 a  b -> a b 
 	int flag = 0;
 	string::iterator it;
@@ -635,6 +641,29 @@ void InterManager::EXEC_SHOW(){
 	cm.show_table(tname);
 }
 
+void InterManager::EXEC_UPDATE(){
+	int pos = 6;
+	CataManager cm;
+	vector<int> attrselect;//the index of selected attributes
+	vector<where> w_select;//the index of selected attributes
+	vector<int> attrwhere;//the index of where attributes
+	vector<where> w_where;
+	string temp[32];//attribute name of selected attribute
+	string temp0;
+	int countselect = 0;
+	pos++;
+	int pos1 = GOGOGO(pos);
+	string tname = qs.substr(pos, pos1 - pos);
+	Table* t = cm.getTable(tname);
+	Attribute A = t->getattribute();
+	pos = pos1 + 1;
+	pos1 = GOGOGO(pos);
+	interwhere(pos1, attrselect, w_select, A, t);
+	pos = pos1 + 1;
+	pos1 = GOGOGO(pos);
+	interwhere(pos1, attrwhere, w_where, A, t);
+	cout << "更新功能还有待完善...." << endl;
+}
 
 bool To_int(string s, int& a){
 	int i;

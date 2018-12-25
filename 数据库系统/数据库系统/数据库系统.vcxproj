@@ -10,6 +10,32 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="API.h" />
+    <ClInclude Include="base.h" />
+    <ClInclude Include="bptree.h" />
+    <ClInclude Include="BufferManager.h" />
+    <ClInclude Include="Catalog.h" />
+    <ClInclude Include="const.h" />
+    <ClInclude Include="IndexManager.h" />
+    <ClInclude Include="Interpreter.h" />
+    <ClInclude Include="RecordManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="API.cpp" />
+    <ClCompile Include="base.cpp" />
+    <ClCompile Include="bptree.cpp" />
+    <ClCompile Include="BufferManager.cpp" />
+    <ClCompile Include="Catalog.cpp" />
+    <ClCompile Include="IndexManager.cpp" />
+    <ClCompile Include="Interpreter.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="RecordManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="mysql.sql" />
+    <Text Include="test.bat" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{BDA14D97-5E38-4125-B416-8B764B5938B6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -77,31 +103,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\API.h" />
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\base.h" />
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\bptree.h" />
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\BufferManager.h" />
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\Catalog.h" />
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\const.h" />
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\IndexManager.h" />
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\Interpreter.h" />
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\RecordManager.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\API.cpp" />
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\base.cpp" />
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\bptree.cpp" />
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\BufferManager.cpp" />
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\Catalog.cpp" />
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\IndexManager.cpp" />
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\Interpreter.cpp" />
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\main.cpp" />
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\RecordManager.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="G:\sql.sql" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

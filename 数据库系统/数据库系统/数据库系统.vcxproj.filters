@@ -15,66 +15,69 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\API.h">
+    <ClInclude Include="API.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\base.h">
+    <ClInclude Include="base.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\bptree.h">
+    <ClInclude Include="bptree.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\BufferManager.h">
+    <ClInclude Include="BufferManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\Catalog.h">
+    <ClInclude Include="Catalog.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\const.h">
+    <ClInclude Include="const.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\IndexManager.h">
+    <ClInclude Include="IndexManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\Interpreter.h">
+    <ClInclude Include="Interpreter.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\RecordManager.h">
+    <ClInclude Include="RecordManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\API.cpp">
+    <ClCompile Include="API.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\base.cpp">
+    <ClCompile Include="base.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\bptree.cpp">
+    <ClCompile Include="bptree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\BufferManager.cpp">
+    <ClCompile Include="BufferManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\Catalog.cpp">
+    <ClCompile Include="Catalog.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\IndexManager.cpp">
+    <ClCompile Include="IndexManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\Interpreter.cpp">
+    <ClCompile Include="Interpreter.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\main.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="E:\研究生学习资料\高级数据库\夏季小学期DB\hnuSQL\RecordManager.cpp">
+    <ClCompile Include="RecordManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="G:\sql.sql">
-      <Filter>源文件</Filter>
+    <Text Include="test.bat">
+      <Filter>资源文件</Filter>
+    </Text>
+    <Text Include="mysql.sql">
+      <Filter>资源文件</Filter>
     </Text>
   </ItemGroup>
 </Project>

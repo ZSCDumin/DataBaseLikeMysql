@@ -19,7 +19,7 @@ public:
     void EXEC_SHOW();
     void EXEC_EXIT();
     void EXEC_FILE();
-    
+	void EXEC_UPDATE();
     inline int GOGOGO(int pos);
     
     void interwhere(int& pos1, std::vector<int> &attrwhere, std::vector<where> &w, Attribute A,

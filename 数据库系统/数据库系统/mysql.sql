@@ -18,3 +18,4 @@ create index name_idex on student(name);
 show table student;
 drop index name_idex on student;
 show table student;
+update student set name="dumin" where age=25;
